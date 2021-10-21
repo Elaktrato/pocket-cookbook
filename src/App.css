@@ -1,38 +1,118 @@
 .App {
-  text-align: center;
+    text-align: left;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.headlineContainer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: #3f39;
+}
+
+.backBtn {
+    width: 4rem;
+    height: 100%;
+    background-color: #888;
+    text-align: center;
+}
+
+.backBtnContent {
+    font-size: 3rem;
+    color: #3f39;
+    text-decoration: none;
+}
+
+.recipeTitle {
+    padding-left: 7vw;
+    margin: 0
+}
+
+.recipeImageContainer {
+    max-width: 100vw;
+    height: 60vh;
+}
+
+.recipeImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.recipeCourse {
+    padding: 2rem 7vw;
+    text-transform: uppercase;
+    background-color: #3f39;
+}
+
+.recipeIngredientsListContainer {
+    padding: 2rem 7vw;
+    background-color: #888;
+}
+
+.recipeIngredientsList {}
+
+.recipeIngredient {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: #fff
+}
+
+.recipeIngredient::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    margin-right: .5rem;
+}
+
+.recipeInstructions {
+    padding: 2rem 7vw;
+}
+
+.recipeInstructions h2 {
+    padding-bottom: 1rem;
+    border-bottom: 2px #3f39 solid;
+    margin-top: 0;
+}
+
+.recipeInstructions ol {
+    padding: 0 1rem;
 }

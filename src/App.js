@@ -1,24 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from 'react';
+import {NavLink, Switch, Route} from 'react-router-dom';
+import Home from './Home';
+import Recipe from './Recipe'
+
+// const GqlSpaceId = 'njpamh37adwc';
+
+// const GqlToken = '4TvBJEJIG7PBWPKDW_w-_2Mv6JTveJxGsNK6dZ3LlQY'
+
+const query = `
+{
+  recipeCollection {
+    items {
+      sys {id},
+      name,
+      course,
+      picture {
+        url
+      }
+    }
+  }
+}
+`
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/:id" component={Recipe} />
+  </Switch>
   );
 }
 
