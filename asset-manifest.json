@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pocket-cookbook/static/css/main.a7954262.chunk.css",
+    "main.js": "/pocket-cookbook/static/js/main.b788f8e8.chunk.js",
+    "main.js.map": "/pocket-cookbook/static/js/main.b788f8e8.chunk.js.map",
+    "runtime-main.js": "/pocket-cookbook/static/js/runtime-main.bf503a1b.js",
+    "runtime-main.js.map": "/pocket-cookbook/static/js/runtime-main.bf503a1b.js.map",
+    "static/js/2.0451ec6a.chunk.js": "/pocket-cookbook/static/js/2.0451ec6a.chunk.js",
+    "static/js/2.0451ec6a.chunk.js.map": "/pocket-cookbook/static/js/2.0451ec6a.chunk.js.map",
+    "static/js/3.311411e9.chunk.js": "/pocket-cookbook/static/js/3.311411e9.chunk.js",
+    "static/js/3.311411e9.chunk.js.map": "/pocket-cookbook/static/js/3.311411e9.chunk.js.map",
+    "index.html": "/pocket-cookbook/index.html",
+    "static/css/main.a7954262.chunk.css.map": "/pocket-cookbook/static/css/main.a7954262.chunk.css.map",
+    "static/js/2.0451ec6a.chunk.js.LICENSE.txt": "/pocket-cookbook/static/js/2.0451ec6a.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/pocket-cookbook/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf503a1b.js",
+    "static/js/2.0451ec6a.chunk.js",
+    "static/css/main.a7954262.chunk.css",
+    "static/js/main.b788f8e8.chunk.js"
+  ]
+}
