@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import {useParams, NavLink} from 'react-router-dom';
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+require('dotenv').config();
 
 
 function Home() {
@@ -64,12 +65,12 @@ function Home() {
 
   useEffect(() => { 
     window
-      .fetch(`https://graphql.contentful.com/content/v1/spaces/njpamh37adwc`, {
+      .fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           // Authenticate the request
-          Authorization: "Bearer 4TvBJEJIG7PBWPKDW_w-_2Mv6JTveJxGsNK6dZ3LlQY",
+          Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
         },
         // send the GraphQL query
         body: JSON.stringify({ query }),
