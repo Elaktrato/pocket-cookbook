@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pocket-cookbook/static/css/main.a7954262.chunk.css",
-    "main.js": "/pocket-cookbook/static/js/main.b788f8e8.chunk.js",
-    "main.js.map": "/pocket-cookbook/static/js/main.b788f8e8.chunk.js.map",
+    "main.js": "/pocket-cookbook/static/js/main.15cd0e67.chunk.js",
+    "main.js.map": "/pocket-cookbook/static/js/main.15cd0e67.chunk.js.map",
     "runtime-main.js": "/pocket-cookbook/static/js/runtime-main.bf503a1b.js",
     "runtime-main.js.map": "/pocket-cookbook/static/js/runtime-main.bf503a1b.js.map",
     "static/js/2.0451ec6a.chunk.js": "/pocket-cookbook/static/js/2.0451ec6a.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.bf503a1b.js",
     "static/js/2.0451ec6a.chunk.js",
     "static/css/main.a7954262.chunk.css",
-    "static/js/main.b788f8e8.chunk.js"
+    "static/js/main.15cd0e67.chunk.js"
   ]
 }
