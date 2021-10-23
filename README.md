@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## live deployed version https://elaktrato.github.io/pocket-cookbook/
+## live version [here](https://elaktrato.github.io/pocket-cookbook/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
