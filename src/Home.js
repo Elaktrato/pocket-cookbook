@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import {NavLink} from 'react-router-dom';
-require('dotenv').config();
 
 function Home() {
 
@@ -24,6 +23,7 @@ function Home() {
 
 
   console.log(process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN)
+  console.log(process.env.REACT_APP_CONTENTFUL_SPACE_ID)
   useEffect(() => {
     window
       .fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE_ID}`, {
@@ -41,7 +41,7 @@ function Home() {
         if (errors) {
           console.error(errors);
         }
-
+        console.log(query)
         // rerender the entire component with new data
         setRecipes(data.recipeCollection.items)
         console.log(recipes)
